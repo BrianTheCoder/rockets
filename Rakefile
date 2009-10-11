@@ -5,12 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rockets"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{TODO: sprockets written in rack}
+    gem.description = %Q{TODO: Middle ware to process directives in your javascript and css (maybe other stuff later?) and then compile it to a single file, also plan on adding a caching layer via redis or memcache so its not so i/o bound}
     gem.email = "wbsmith83@gmail.com"
     gem.homepage = "http://github.com/BrianTheCoder/rockets"
     gem.authors = ["brianthecoder"]
     gem.add_development_dependency "yard"
+    gem.add_dependency "extlib"
+    gem.add_dependency "mime-types", "1.16"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
